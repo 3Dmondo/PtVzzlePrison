@@ -15,6 +15,8 @@ The input file must be a text file with N rows.
 
 Each row must contain M integers in [0, 1] separated by spaces
 
+All rows must have the same number of elemets.
+
 Examples of valid and invalid input files are provided in the
 directory PvVzzlePrison.Tests\Resources\.
 

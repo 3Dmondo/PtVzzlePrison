@@ -3,7 +3,7 @@
     internal class ArgumentsParser
     {
         internal const string WrongNumberOfArguments = "Wrong number of arguments, 1 expected, {0} found";
-        internal const string FileDoesNotExist = "File {0} does not exist";
+        internal const string FileDoesNotExist = "File {0} does not found";
         internal const string FileExist = "File {0} found";
 
         public static bool ValidateArguments(string[] args)

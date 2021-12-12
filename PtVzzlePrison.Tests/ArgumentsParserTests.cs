@@ -1,5 +1,4 @@
-﻿
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace PtVzzlePrison.Tests
 {
@@ -29,7 +28,7 @@ namespace PtVzzlePrison.Tests
         {
             using (StringWriter sw = new StringWriter())
             {
-                var fileName = "fileName.txt";
+                var fileName = Files.NotExist;
                 Console.SetOut(sw);
                 var result = ArgumentsParser.ValidateArguments(new string[] { fileName });
                 string expected =
@@ -44,7 +43,7 @@ namespace PtVzzlePrison.Tests
         {
             using (StringWriter sw = new StringWriter())
             {
-                var fileName = "Resources/2by2-valid.txt";
+                var fileName = Files.valid_2x2;
                 Console.SetOut(sw);
                 var result = ArgumentsParser.ValidateArguments(new string[] { fileName });
                 string expected =

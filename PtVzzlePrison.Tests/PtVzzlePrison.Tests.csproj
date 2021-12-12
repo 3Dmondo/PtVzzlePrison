@@ -14,19 +14,25 @@
 	  <ProjectReference Include="..\PtVzzlePrison\PtVzzlePrison.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-	  <None Update="Resources\2by2-not-valid-1.txt">
+	  <None Update="Resources\not_valid_2x2_1.txt">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="Resources\2by2-not-valid-2.txt">
+	  <None Update="Resources\not_valid_2x2_4.txt">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="Resources\2by2-valid-not-connected.txt">
+	  <None Update="Resources\not_valid_2x2_3.txt">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="Resources\2by2-valid.txt">
+	  <None Update="Resources\not_valid_2x2_2.txt">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="Resources\2by3-not-solvable.txt">
+	  <None Update="Resources\not_connected_2x2.txt">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\valid_2x2.txt">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\not_solvable_2x3.txt">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>
