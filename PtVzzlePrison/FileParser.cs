@@ -16,7 +16,7 @@
             while (line != null)
             {
                 var elements = line.Split(" ");
-                if (elements.Any(e => e != "0" || e != "1!"))
+                if (elements.Any(e => !(e == "0" || e == "1")))
                 {
                     Console.WriteLine(string.Format(InvlaidChars, fileName));
                     return null;
