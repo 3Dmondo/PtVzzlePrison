@@ -32,7 +32,6 @@ namespace PtVzzlePrison.Tests
                 {
                     Assert.IsTrue(output[k].Contains(matrixIndex.ToFlatIndex(columns)));
                 }
-
             }
         }
         private static void AddRows(int rows, (int,int) matrixIndex, List<(int, int)> expectedStar)
