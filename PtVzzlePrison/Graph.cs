@@ -3,32 +3,23 @@
     public class Graph
     {
         public (int, int) OpenLink { get; }
+        public int Rows { get; }
+        public int Colums { get; }
+        private IList<IList<int>> Stars { get; }
 
-        public Graph(int[][] stars, (int,int) openLink)
+        public Graph(IList<IList<int>> stars, int rows, int columns, (int, int) openLink)
         {
             Stars = stars;
             OpenLink = openLink;
+            Rows = rows;
+            Colums = columns;
         }
-
-        private int[][] Stars;
-
         public IEnumerable<int> GetStar(int id)
         {
-            for (int i = 0; i < Stars[id].Length; i++)
+            for (int i = 0; i < Stars[id].Count; i++)
             {
                 yield return Stars[id][i];
             }
-        }
-
-        public override bool Equals(object? obj)
-        {
-            return obj is Graph graph &&
-                   OpenLink.Equals(graph.OpenLink);
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(OpenLink);
         }
     }
 }

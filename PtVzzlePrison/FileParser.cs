@@ -38,7 +38,7 @@
             var columns = result[rows - 1].Length;
             if (result[rows - 1][columns - 1] == 0)
             {
-                Console.WriteLine(string.Format(ExitNodeClosed, fileName));
+                Console.WriteLine(string.Format(ExitNodeClosed, fileName, rows - 1, columns - 1));
                 return null;
             }
             for (int i = 1; i < rows; i++)
