@@ -31,7 +31,7 @@ If a sloution was found, the file is composed by three blocks, separated by blan
 The fist block represents the solution; like the input file there are N rows, and each
 row has M integers in [0, 1] with the ones representing the solution path.
 
-The second block id the cost of the solution (the sum of the ones).
+The second block is the cost of the solution (the sum of the ones minus one).
 
 The third (optional) block contains two integers in ([0, N-1], [0, M-1]) of the opened wall.
 If no wall was opened, the block is missing.
