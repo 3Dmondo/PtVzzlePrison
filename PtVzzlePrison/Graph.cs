@@ -5,7 +5,7 @@
         public (int, int) OpenLink { get; }
         public int Rows { get; }
         public int Colums { get; }
-        private IList<IList<int>> Stars { get; }
+        internal IList<IList<int>> Stars { get; }
 
         public Graph(IList<IList<int>> stars, int rows, int columns, (int, int) openLink)
         {
