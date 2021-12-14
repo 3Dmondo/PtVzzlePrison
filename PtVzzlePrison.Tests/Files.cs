@@ -10,6 +10,7 @@
         internal const string not_valid_2x2_2 = Resources + "not_valid_2x2_2.txt";
         internal const string not_valid_2x2_3 = Resources + "not_valid_2x2_3.txt";
         internal const string not_valid_2x2_4 = Resources + "not_valid_2x2_4.txt";
+        internal const string valid_20x20 = Resources + "valid_20x20.txt";
         internal const string valid_2x2 = Resources + "valid_2x2.txt";
         internal const string NotExist = Resources + "NotExist.txt";
     }

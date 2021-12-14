@@ -8,6 +8,7 @@ namespace PtVzzlePrison.Tests
     {
         [TestMethod]
         [DataRow(Files.valid_2x2)]
+        [DataRow(Files.valid_20x20)]
         [DataRow(Files.not_connected_2x2)]
         [DataRow(Files.not_solvable_2x3)]
         public void MainTest(string fileName)
