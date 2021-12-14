@@ -36,7 +36,7 @@
 
         public static Node NotFound(Graph graph)
         {
-            return new(-1, null, -1, graph);
+            return new(-1, null, int.MaxValue, graph);
         }
 
         public override bool Equals(object? obj)

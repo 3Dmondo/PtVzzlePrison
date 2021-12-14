@@ -35,7 +35,7 @@ The second block id the cost of the solution (the sum of the ones).
 The third (optional) block contains two integers in ([0, N-1], [0, M-1]) of the opened wall.
 If no wall was opened, the block is missing.
 
-Solution examples are provided in the PvVzzlePrison.Tests\Resources\ directory.
+Solution examples (files with "expected" extension) are provided in the PvVzzlePrison.Tests\Resources\ directory.
 
 ## Tests
 cd PtVzzlePrison.Tests

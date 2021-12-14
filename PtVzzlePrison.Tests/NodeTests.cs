@@ -24,6 +24,9 @@ namespace PtVzzlePrison.Tests
         public void NotFoundTest()
         {
             var node = Node.NotFound(GraphTests.TestGraph);
+            Assert.AreEqual(-1, node.Id);
+            Assert.IsNull(node.Predecessor);
+            Assert.AreEqual(int.MaxValue, node.Cost);
             Assert.AreEqual(Node.NotFound(GraphTests.TestGraph), node);
         }
 
