@@ -8,7 +8,8 @@ Run dotnet-install.sh
 
 # Execute
 cd PtVzzlePrison
-dotnet run -- <input-file-name>
+
+dotnet run -- \<input-file-name\>
 
 ## File format
 The input file must be a text file with N rows.
