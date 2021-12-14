@@ -22,7 +22,7 @@ Examples of valid and invalid input files are provided in the
 directory PvVzzlePrison.Tests\Resources\.
 
 ## Output
-A text file named <input-file-name-without-extension>.solution with the following format:
+A text file named \<input-file-name-without-extension\>.solution with the following format:
 
 If no solution was found, the file is empty.
 
