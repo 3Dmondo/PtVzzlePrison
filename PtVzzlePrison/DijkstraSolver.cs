@@ -18,13 +18,12 @@
                     }
                     foreach (Node node in current.Star())
                     {
-                        if (costs.TryGetValue(node.Id, out var prevCost) &&
-                            node.Cost > prevCost)
+                        if (!costs.TryGetValue(node.Id, out var prevCost) ||
+                            node.Cost < prevCost)
                         {
-                            continue;
+                            costs[node.Id] = node.Cost;
+                            queue.Enqueue(node, node.Cost);
                         }
-                        costs[node.Id] = node.Cost;
-                        queue.Enqueue(node, node.Cost);
                     }
                 }
             }
